@@ -1,4 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root{
+  --good-text-color: #59830f;
+  --bad-text-color: #830f0f;
+}
+
+.app-container{
+  padding: 150px;
+  scale: .85;
+  box-shadow: 15px 15px 100px rgba(0, 0, 0, 0.3);
+  font-family: "DM Sans";
+}
+
+.header-container{
+  display: flex;
+  gap: 20px;
+}
+
+.header-title{
+  margin: 0;
+  flex-grow: 1;
+}
+
+.onu-link, .pda-link{
+  text-decoration: none;
+  padding: 10px 20px;
+  color: white;
+
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+.onu-link{
+  background-color: var(--bad-text-color);
+}
+
+.pda-link{
+  background-color: var(--good-text-color);
+}
+
 .main-container{
   display: flex;
+
+  justify-content: center;
+
+  gap: 100px;
+  place-items: center;
+}
+
+
+.main-message{
+  font-size: 75px;
+  line-height: 70px;
+
+  font-family: "Dm Sans";
+  font-weight: 600;
+}
+
+.good-text, .bad-text{
+  font-weight: bold;
+  font-family: 85px;
+
+}
+
+.good-text{
+  color: var(--good-text-color);
+}
+
+.bad-text{
+  text-decoration: line-through;
+  color: var(--bad-text-color);
+}
+
+.deforestation-image{
+  aspect-ratio: 1;
+  height: 320px;
+  width: 320px;
+}
+
+.cards-container{
+  display: flex;
+
+  gap:20px;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  max-width: 1100px;
+
+  margin-top: 20px;
   padding: 20px;
+}
+
+.card-container{
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+
+  text-align: center;
+
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+
+  height: 150px;
+
+  aspect-ratio: 1;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.card-title{
+  font-weight: bolder;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+a:hover, .card-container:hover{
+  scale: 1.1;
 }
