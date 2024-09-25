@@ -7,9 +7,7 @@ const colors = {
 
 export const Card = ({title, message}) => {
     return <div className="card-container">
-        <div style={{
-            color:colors[title]
-        }} className="card-title">{title}</div>
+        <div   className="card-title">{title}</div>
         <div>{message}</div>
     </div>
 }
